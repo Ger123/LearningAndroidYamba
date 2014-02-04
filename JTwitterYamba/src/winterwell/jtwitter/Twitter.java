@@ -610,11 +610,11 @@ public class Twitter {
     public final int timezoneOffSet;
     public final String timezone;
     public int followersCount;
-    public final String profileBackgroundColor;
-    public final String profileLinkColor;
-    public final String profileTextColor;
-    public final String profileSidebarFillColor;
-    public final String profileSidebarBorderColor;
+    //public final String profileBackgroundColor;
+    //public final String profileLinkColor;
+    //public final String profileTextColor;
+    //public final String profileSidebarFillColor;
+    //public final String profileSidebarBorderColor;
 
     /**
      * number of people this user is following
@@ -657,12 +657,12 @@ public class Twitter {
         website = url == null ? null : URI(url);
         protectedUser = obj.getBoolean("protected");
         followersCount = obj.getInt("followers_count");
-        profileBackgroundColor = obj.getString("profile_background_color");
-        profileLinkColor = obj.getString("profile_link_color");
-        profileTextColor = obj.getString("profile_text_color");
-        profileSidebarFillColor = obj.getString("profile_sidebar_fill_color");
-        profileSidebarBorderColor = obj
-            .getString("profile_sidebar_border_color");
+        //profileBackgroundColor = obj.getString("profile_background_color");
+        //profileLinkColor = obj.getString("profile_link_color");
+        //profileTextColor = obj.getString("profile_text_color");
+        //profileSidebarFillColor = obj.getString("profile_sidebar_fill_color");
+        //profileSidebarBorderColor = obj
+          //  .getString("profile_sidebar_border_color");
         friendsCount = obj.getInt("friends_count");
         String c = jsonGet("created_at", obj);
         try {
@@ -717,11 +717,11 @@ public class Twitter {
       website = null;
       protectedUser = false;
       followersCount = 0;
-      profileBackgroundColor = null;
-      profileLinkColor = null;
-      profileTextColor = null;
-      profileSidebarFillColor = null;
-      profileSidebarBorderColor = null;
+      //profileBackgroundColor = null;
+      //profileLinkColor = null;
+      //profileTextColor = null;
+      //profileSidebarFillColor = null;
+      //profileSidebarBorderColor = null;
       friendsCount = 0;
       createdAt = null;
       favoritesCount = 0;
@@ -788,8 +788,8 @@ public class Twitter {
       return name;
     }
 
-    public String getProfileBackgroundColor() {
-      return profileBackgroundColor;
+    //public String getProfileBackgroundColor() {
+      //return profileBackgroundColor;
     }
 
     public URI getProfileBackgroundImageUrl() {
@@ -800,20 +800,20 @@ public class Twitter {
       return profileImageUrl;
     }
 
-    public String getProfileLinkColor() {
-      return profileLinkColor;
+    //public String getProfileLinkColor() {
+      //return profileLinkColor;
     }
 
-    public String getProfileSidebarBorderColor() {
-      return profileSidebarBorderColor;
+    //public String getProfileSidebarBorderColor() {
+      //return profileSidebarBorderColor;
     }
 
-    public String getProfileSidebarFillColor() {
-      return profileSidebarFillColor;
+    //public String getProfileSidebarFillColor() {
+      //return profileSidebarFillColor;
     }
 
-    public String getProfileTextColor() {
-      return profileTextColor;
+    //public String getProfileTextColor() {
+      //return profileTextColor;
     }
 
     public boolean getProtectedUser() {
